@@ -6,7 +6,7 @@ Created on Sat Jul 18 21:37:08 2020
 """
 
 
-from flask import Flask, request, jsonify
+from flask import Flask, request
 app = Flask(__name__)
 
 @app.route('/getmsg/', methods=['GET'])
@@ -14,10 +14,7 @@ def respond():
     # Retrieve the name from url parameter
     name = request.args.get("name", None)
 
-    # For debugging
-    print(f"got name {name}")
-
-    response = {}
+    
 
     
 
