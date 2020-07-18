@@ -11,20 +11,13 @@ app = Flask(__name__)
 
 @app.route('/getmsg/', methods=['GET'])
 def respond():
-    # Retrieve the name from url parameter
+    
     name = request.args.get("name", None)
 
-    
-
-    
-
-
-
-# A welcome message to test our server
 @app.route('/')
 def index():
     return "<h1>Hello World !!</h1>"
 
 if __name__ == '__main__':
-    # Threaded option to enable multiple instances for multiple user access support
-    app.run(threaded=True, port=5000)
+    
+    app.run()
