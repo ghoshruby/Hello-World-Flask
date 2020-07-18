@@ -6,7 +6,7 @@ Created on Sat Jul 18 21:37:08 2020
 """
 
 
-from flask import Flask, request
+from flask import Flask
 app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
