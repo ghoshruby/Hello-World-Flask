@@ -1,1 +1,1 @@
-web: lein run -m demo.web $PORT 
+web lein run -m demo.web $PORT 
