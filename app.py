@@ -10,9 +10,7 @@ from flask import Flask, request
 app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
-def respond():
-    
-    name = request.args.get("name", None)
+
 
 @app.route('/')
 def index():
